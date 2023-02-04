@@ -1,7 +1,7 @@
 import { describe, test } from 'vitest'
 import * as B from '../index.js';
 
-describe.concurrent('counter end-to-end test', async () => {
+describe('counter end-to-end test', async () => {
   test('should change count when button clicked', async ({browser}) => {
     await browser.init();
     await browser.waitForElementVisible('body')
